@@ -1,0 +1,83 @@
+
+a.ucl_href, a.ucl_href:link, a.ucl_href:visited, a.ucl_href:active, a.ucl_href:hover  {
+	color: #D2691E;
+}
+
+h1 {
+	color: #4682B4 
+}
+
+h2 {
+	color: #4682B4 
+}
+
+a, a:link, a:visited, a:active {
+	color: #4682B4
+}
+
+a:hover {
+	color: #D2691E; 
+	border-color: #D2691E 
+}
+
+.typeTokenSummary {
+	font-size: 13px; 
+	padding-right: 20px;
+}
+
+.mtc {
+	display: none;
+}
+
+.tabPieSwitchers {
+	position: absolute; 
+	z-index: 999; 
+	left: 10; 
+	top: 10;
+}
+
+.alive {
+	height: 20px; 
+	margin-right: 10px; 
+	cursor:pointer
+}
+
+.dead {
+	height: 20px;
+	margin-right: 10px; 	
+	opacity: 0.2
+}
+
+#pieTab {
+	width: auto;
+	display: inline-block;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.pieTabHeading {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#pieTab th {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#pieTab tr {
+	cursor: pointer;
+}
+
+#pieTab tr:hover {
+	background-color: #a6a6a6;
+}
+
+.rowSelected {
+	background-color: #a6a6a6;
+}
+
+#charts2 {
+	display: none;
+}
+

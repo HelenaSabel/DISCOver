@@ -1,0 +1,516 @@
+/*Main body*/
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Share, Helvetica, Arial, sans-serif; 
+}
+
+main {
+    margin: 0% 2% 2% 2%;
+
+    min-height: 78%;}
+
+.filter-label {
+    //margin-right: 2%;
+    color: #0090d3;
+}
+
+p{
+    line-height: 150%;
+}
+
+a {
+    color: #4d648d;
+    text-decoration: none;
+}
+
+
+h1 {
+    color: #779AD9;
+    text-align: center;
+    //text-transform: uppercase;
+    margin-top: 0%;
+}
+
+h1 span {
+    text-transform: none;
+}
+
+h2{
+    color: #4d648d;
+}
+
+h3 {
+    color: #283655;
+}
+
+h4 {
+    color: #1e1f26;
+}
+
+
+hr { margin-bottom: 2%;
+    margin-top: 2%;
+    border: 0; height: 1.5px; background-image: linear-gradient(to right, rgba(40, 54, 85, 0), rgba(40, 54, 85, 0.8), rgba(40, 54, 85, 0)); }
+
+
+/*faceted search*/
+
+.input {
+    display:flex;
+
+}
+
+.input #submit {
+    height:2em;
+}
+
+.input label {
+    font-weight: bold;
+    padding-right: 1.5em;
+    margin-left: .3em;
+}
+
+/*containers faceted search*/
+
+#container {
+    overflow: scroll;
+}
+
+.container_results {
+    width: 49.8%; display:inline-block; vertical-align:top; margin-bottom: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#container, .chart_container {
+    height: 500px; border: 1px solid grey;
+    padding: 2%;
+}
+
+
+#containerChart2, #containerChart3, #containerChart4 , #containerChart5 {
+    display:none
+}
+
+.container_results .author {
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.container_results .birth, .container_results .death, .container_results .continent {
+    font-size: smaller;
+}
+
+.container_results {
+    line-height: 150%;
+}
+
+
+
+/*Charts rhyme*/
+
+#hcPie{
+    overflow: hidden;
+}
+
+#charts1 {
+    margin-bottom: 2%;
+}
+
+
+
+
+/*reading view of poems*/
+
+
+.poem {
+    margin-left: 20px;
+}
+.author {
+    font-weight: bold;
+}
+.death, .continent {
+    padding-left: 10px;
+}
+
+#showSelectedButton, #plotSelectedButton, #curveName, #checkAllButton {
+    display: none;
+}
+
+/*.showLineWithMargin{
+    margin-bottom: 10px;
+}*/
+
+table.poem-tab {
+margin-left: 0;
+
+}
+
+.poem-tab td{
+    padding: 0px 0px 0px 1.5em;
+}
+
+div.poem-block{
+    padding: 1.5%;
+}
+div.poem-block:nth-child(even){
+    background-color: #EFF5FF;
+
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.rhyme a{
+    color: #4d648d;
+    /*text-decoration: underline;*/
+
+
+}
+.enjamb{
+    color: #1e1f26;
+    cursor: pointer;
+}
+
+.rhythm{
+    color: #283655;
+
+}
+
+.showBirth, .showDeath, .showContinent{
+    padding-right: 10px;
+}
+
+
+.rhyme, .rhythm, .enjamb{
+    visibility: hidden;
+    font-weight: bold;
+}
+
+
+.reading-menu {
+    text-align: center ;
+}
+
+.reading-menu label {
+    padding-right: 1%;
+}
+
+
+/*  Buttons*/
+
+button {
+    background-color: #d0e1f9;
+    color: #1e1f26;
+    padding: 0.4em;
+    font-weight: 400;
+}
+
+
+
+/*Checkboxes - index*/
+
+.controlgroup {
+   display: inline;
+   margin-right: 2%;
+   color: #283655;
+   font-weight: bold;
+}
+
+.controlgroup label{
+    color: #3F5273;
+    font-weight: bold;
+    margin-left: 1%;
+
+}
+
+
+
+/*tables*/
+
+
+ table.desc, .desc td {
+      border:solid 1px #283655;
+      border-collapse:collapse;
+  }
+
+
+ table {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+
+th {
+      background-color: #283655;
+      border:solid 1px white;
+      color: white;
+
+
+  }
+
+.desc th, .desc td{
+
+    padding: .8em;
+
+}
+
+caption {
+    padding-bottom: 1%;
+}
+
+figcaption span, caption span {
+    font-weight: bold;
+    color: #283655;
+}
+
+
+
+
+
+/*Footer*/
+
+
+footer {
+    display:flex; justify-content:space-around;
+    padding-bottom: 1%;
+    background-color: #d0e1f9;
+    margin-top: 3%;
+}
+
+footer figure {
+    width: 17%;
+    text-align: center;
+}
+
+footer img {
+    max-width:100%;
+    max-height:100%;
+}
+
+footer figcaption {
+    font-weight: 400; padding-top: 3%;
+    font-size:smaller;;
+}
+
+footer .reduce {
+    width: 25%;
+}
+
+
+
+
+/*Menu*/
+
+
+nav {
+    margin-bottom: 2%;
+}
+
+
+/**
+ * Tabs object.
+ *n-right: auto;
+    margin-left: auto;
+}
+
+#container, .chart_container {
+    height: 500px; border: 1px solid grey;
+    padding: 2%;
+}
+
+ * 1. Tables (kinda) for layout!
+ * 2. This is the magic bit; make all children occupy equal width.
+ * 3. Required to make the tabs fill their container.
+ * 4. Make each tab pack up horizontally.
+ * 5. Ensure the hit area covers the whole tab.
+ */
+.tabs {
+    margin:  0;
+    padding: 0;
+    list-style: none;
+    display: table; /* [1] */
+    table-layout: fixed; /* [2] */
+    width: 100%; /* [3] */
+}
+
+.tabs__item {
+    width: 100%;
+    float: left;
+}
+
+@media screen and (min-width: 40em) {
+    .tabs__item {
+        display: table-cell; /* [4] */
+        float: none;
+        width: auto;
+    }
+}
+
+.tabs__link {
+    display: block; /* [5] */
+}
+
+
+/**
+ * Primary nav. Extends `.tabs`.
+ *
+ * 1. Stop tabs’ corners leaking out beyond our 4px round.
+ */
+.primary-nav {
+    text-align: center;
+    border-radius: 0;
+    overflow: hidden; /* [1] */
+}
+
+.primary-nav a {
+    padding: .4em 0.6em;
+    color: white;
+    background: #4d648d;
+    text-decoration: none;
+    border-right: 1px solid #000;
+    font-family: Share, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.primary-nav a:hover {
+    color: black;
+    background: #d0e1f9;
+}
+
+/* add tab with site title */
+
+.tabs__item__alt {
+    padding: .4em 0.6em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #0090d3;
+    //background: #d0e1f9;
+    background: #f8f8f8;
+}
+
+.tabs__item__alt a {
+    background: #f8f8f8;
+    border-right: 0;
+    font-size: 1em;
+}
+
+.tabs__item__alt a:hover {
+    background: #f8f8f8;
+    border-right: 0;
+    font-size: 1em;
+}
+
+.tabs__item__alt span.main {
+    color: #0090d3;
+}
+
+.tabs__item__alt span.alt {
+    color: #283655;
+}
+
+
+
+
+/* Responsive-nav.js */
+
+.js .nav-collapse {
+    clip: rect(0 0 0 0);
+    max-height: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.nav-collapse.opened {
+    max-height: 9999px;
+}
+
+.disable-pointer-events {
+    pointer-events: none !important;
+}
+
+.nav-toggle {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@media screen and (min-width: 40em) {
+    .js .nav-collapse {
+        position: relative;
+    }
+    .js .nav-collapse.closed {
+        max-height: none;
+    }
+    .nav-toggle {
+        display: none;
+    }
+}
+
+.nav-collapse {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-toggle {
+    position: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    text-indent: -999px;
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 55px;
+    float: right;
+}
+
+.nav-toggle:before {
+    color: #d0e1f9;
+    font-family: "responsivenav", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 28px;
+    text-transform: none;
+    position: absolute;
+    content: "≡";
+    text-indent: 0;
+    text-align: center;
+    line-height: 55px;
+    speak: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav-toggle.active::before {
+    font-size: 24px;
+    content:"x";
+}
