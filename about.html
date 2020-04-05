@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About (the DISCOurse)</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+    <title>DISCO</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.tokeninput.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/token-input.css" type="text/css" />
+</head>
+<body>
+
+<!--#include virtual="ssi/menu.html"-->
+
+<main>
+    <h1>About this corpus</h1>
+    <h2 id="description">Corpus description</h2>
+    <p>Our corpus currently offers a total of 4087 sonnets in Spanish: 2676 from the 19th
+        century, 330 from the 18th century and 1088 from the so-called Spanish Golden Age (15th
+        to 17th centuries). There are a total of 1204 authors (both from Spain and Latin
+        America). It intends to provide a wide sample, inspired by distant reading approaches <a
+                href="#moretti" target="blank">(Moretti, 2005)</a>. The raw texts were in most cases extracted from
+        <a href="#cervantes" target="blank">Biblioteca Virtual Miguel de Cervantes (1999)</a>, with some
+        18th-century texts coming from <a href="https://wikisource.org/wiki/Main_Page" target="blank">Wikisource</a>. A table in section Data
+        Distribution below summarizes these data. </p>
+    <p>The corpus is available in plain-text and in TEI formats; XML-TEI P5 was used given this
+        standard’s benefits in terms of reuse, storage, and retrieval. Author metadata were
+        extracted or inferred from unstructured content in the sources (year, place of birth and
+        death, and gender), and placed in the TEIheader, or in a metadata table in the case of
+        the plain-text version. For both TEI and plain-text formats, two versions of the texts
+        are available: one collecting every sonnet per author, the other encoding a single
+        sonnet per file. For corpus preparation, we closely followed the TEI guidelines and
+        RIDE’s criteria for Digital Text Collections <a href="#hk-n" target="blank">(Henny-Krahmer and Neuber,
+            2017)</a>. </p>
+    <p>Additionally, authors have been assigned VIAF identifiers and described using RDFa
+        attributes. This gives the corpus an entry-point to the Linked Open Data cloud,
+        enhancing its findability. The corpus is available as a GitHub repository and saved in
+        Zenodo, in response to good practices for data use, reuse, and conservation.</p><h2
+        id="graphics">Data distribution</h2>
+    <table class="desc">
+        <caption><span id="table1">Table 1</span>: Corpus data distribution per period, author gender and primary continent of
+            literary activity</caption>
+        <tr>
+            <th>Period</th>
+            <th>Nbr of Sonnets</th>
+            <th colspan="3">Nbr of Authors</th>
+            <th>Tokens</th>
+        </tr>
+        <tr>
+            <td rowspan="4"><b>19th</b></td>
+            <td rowspan="4">2676</td>
+            <td rowspan="4">685</td>
+            <td>Female</td>
+            <td>48</td>
+            <td rowspan="4">252,518</td>
+        </tr>
+        <tr>
+            <td>Male</td>
+            <td>637</td>
+        </tr>
+        <tr>
+            <td>America</td>
+            <td>334</td>
+        </tr>
+        <tr>
+            <td>Europe</td>
+            <td>348 (+3)</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><b>18th</b></td>
+            <td rowspan="4">323</td>
+            <td rowspan="4">42</td>
+            <td>Female</td>
+            <td>1</td>
+            <td rowspan="4">29,006</td>
+        </tr>
+        <tr>
+            <td>Male</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>America</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Europe</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td rowspan="4"><b>15th-17th</b><br />(Golden Age)</td>
+            <td rowspan="4">1088</td>
+            <td rowspan="4">477</td>
+            <td>Female</td>
+            <td>31</td>
+            <td rowspan="4">99,779</td>
+        </tr>
+        <tr>
+            <td>Male</td>
+            <td>446</td>
+        </tr>
+        <tr>
+            <td>America</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Europe</td>
+            <td>458 (+7)</td>
+        </tr>
+    </table>
+    <h2>Bibliography</h2>
+    <p id="cervantes">Biblioteca Virtual Miguel de Cervantes (1999): <em>Biblioteca Virtual
+        Miguel de Cervantes</em>
+        <a href="http://www.cervantesvirtual.com" target="_blank">http://www.cervantesvirtual.com</a></p>
+    <p id="hk-n">Henny-Krahmer, Ulrike, and Frederike Neuber. 2017. “Criteria for Reviewing Digital Text Collections, Version 1.0.” <em>A Review Journal for Digital Editions and Resources</em>, no. 6. <a href="https://www.i-d-e.de/publikationen/weitereschriften/criteria-text-collections-version-1-0/" target="_blank">https://www.i-d-e.de/publikationen/weitereschriften/criteria-text-collections-version-1-0</a>>.</p>
+    <p id="moretti">Moretti, Franco. 2005. <em>Graphs, Maps, Trees: Abstract Models for a Literary History</em>. Verso</p>
+    <hr />
+    <div style="text-align:center; font-size:smaller; font-style:italic">
+        <h3>Cálamo currante</h3>
+        <p>Si escribir te propones un soneto,<br/>
+            ve haciendo lo que yo, que, a fe, no es harto;<br/>
+            tras el verso tercero saldrá el cuarto...<br/>
+            ¡Si es coser y cantar! ¡Mira: un cuarteto!</p>
+
+        <p>Haz otro igual después, que te prometo<br/>
+            que si aquesto es parir, es fácil parto;<br/>
+            van seis versos, y el séptimo ya ensarto;<br/>
+            otro, y van ocho, y al primer terceto.</p>
+
+        <p>Todo es que el verso nono venga al baile<br/>
+            y el décimo en la rueda esté metido.<br/>
+            ¿Hay consonante a baile y fraile? Haíle.</p>
+
+        <p>Pues entonces, ya es esto pan comido,<br/>
+            y cata a Periquillo hecho fraile,<br/>
+            y cata el sonetejo concluido.</p>
+        <p style="font-style:normal;">Francisco de Osuna</p>
+    </div>
+</main>
+<!--#include virtual="ssi/footer.html"-->
+
+</body>
+</html>
